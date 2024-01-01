@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kae Boon</title>
+    <link rel="icon" type="image/png" href="res/flavicon.png" />
+    <link href="”styles.css”" rel="”stylesheet”" />
+    <!-- bootstrap css-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- styles-->
+    <style>
+      #text-center {
+        text-align: center;
+      }
+
+      #bottom {
+        position: relative;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header navigation bar -->
+    <div class="container">
+      <header
+        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+      >
+        <a
+          href="index.html"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
+        >
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap" />
+          </svg>
+          <img src="res/logo.png" width="200 px" />
+          <svg class="bi me-2" width="10" height="32">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+
+        <!-- *************** Second part to edit: Current page-->
+        <ul class="nav nav-pills lead">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">About me</a>
+          </li>
+          <li class="nav-item">
+            <a href="education.html" class="nav-link">Education</a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="contacts.html" class="nav-link active" aria-current="page"
+              >Contacts</a
+            >
+          </li>
+        </ul>
+      </header>
+    </div>
+
+    <!-- *************** Second part to edit: Main body-->
+
+    <div class="container px-4 py-5" id="icon-grid">
+      <main class="text-center">
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5"
+        >
+          <div class="col d-flex">
+            <div>
+              <a href="mailto: hokaeboon@u.nus.edu"
+                ><img src="res/email.png" width="100 px" />
+              </a>
+              <h3 class="text-black">Email</h3>
+              <p class="lead">
+                <a href="mailto: hokaeboon@u.nus.edu">hokaeboon@u.nus.edu</a>
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex">
+            <svg
+              class="bi text-muted flex-shrink-0 me-3"
+              width="1.75em"
+              height="1.75em"
+            ></svg>
+            <div>
+              <a href="https://www.linkedin.com/in/ho-kae-boon/"
+                ><img src="res/linkedin.png" width="100 px"
+              /></a>
+              <h3 class="text-black">Linkedin</h3>
+              <p class="lead">
+                <a href="https://www.linkedin.com/in/ho-kae-boon/"
+                  >ho-kae-boon</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex">
+            <svg
+              class="bi text-muted flex-shrink-0 me-3"
+              width="1.75em"
+              height="1.75em"
+            ></svg>
+            <div>
+              <a href="https://github.com/Kaeboon"
+                ><img src="res/github.png" width="100 px"
+              /></a>
+              <h3 class="text-black">GitHub</h3>
+              <p class="lead">
+                <a href="https://github.com/Kaeboon">Kaeboon</a>
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex">
+            <svg
+              class="bi text-muted flex-shrink-0 me-3"
+              width="1.75em"
+              height="1.75em"
+            ></svg>
+            <div>
+              <a href="https://www.youtube.com/@kboonho"
+                ><img src="res/youtube.png" width="100 px"
+              /></a>
+              <h3 class="text-black">Youtube</h3>
+              <p class="lead">
+                <a href="https://www.youtube.com/@kboonho">@kboonho</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- Footer -->
+    <footer id="bottom" class="text-black-50">Last updated: March 2023</footer>
+
+    <!-- bootstrap javascript-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
