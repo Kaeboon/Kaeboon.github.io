@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Semantic Terrain Segmentation for 3D Scene Understanding</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="..\..\assets\logo\KB_favicon.png"
+    />
+  </head>
+  <title>Semantic Terrain Segmentation for 3D Scene Understanding</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Raleway"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Raleway", sans-serif;
+    }
+  </style>
+
+  <body class="w3-light-grey w3-content" style="max-width: 1600px">
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left: 10px">
+      <!-- Header -->
+      <header id="portfolio">
+        <div class="w3-container">
+          <h1>
+            <b>Semantic Terrain Segmentation for 3D Scene Understanding</b>
+          </h1>
+          Aug 2023 - Present
+          <p>
+            <b>Project Description: </b>
+            <br />
+            My NUS ME4101A final-year project, conducted in partnership with the
+            Institute of Infocomm Research (A*STAR), aims to enhance the point
+            cloud data captured by the Gemini 2L camera sensor in outdoor
+            environments. With more accurate depth perception data, it would
+            help improve various robot navigation tasks that use the sensor
+            data.
+            <br />
+            The Gemini 2L operates on an infrared ray sensor to capture depth
+            information. In outdoor environments, sunlight can interfere with
+            its detection, causing a loss of information. <br /><br />
+            To extrapolate depth information, the Depth-Anything deep learning
+            model is used to estimate depth information in terms of depth images
+            based on RGB data. A camera projection model is used to project the
+            2D depth image to a 3D point cloud. Analysis is carried out to
+            establish the depth relationship between the estimated depth and the
+            incomplete depth information captured from the sensor. These
+            relationships would be used to adjust the estimated depth to better
+            reflect the actual depth.
+            <br /><br />
+            Terrain recognition is also helpful during navigation, as robots
+            would prefer smooth and planar terrains compared to rough ones. In
+            this project, I have manually labeled and prepared training images
+            and trained a YOLOv8 model to segment out various terrains,
+            including roads, grass, grills, railings, etc. With this
+            information, combined with the camera projection model, I could
+            segment out the 3D point cloud into various terrains. <br /><br />
+            Class-specific point cloud enhancement has also been attempted. For
+            terrains with planar surfaces, such as "Grills," I have attempted
+            plane fitting to derive the plane equation, then reprojected all
+            points within the segmented regions onto the plane.
+            <br /><br />
+            The work is still in progress. I will further update the work here
+            in the future.
+            <br /><br />
+            <b>Knowledge Demonstrated: </b>
+            <br />
+            Point Cloud Enhancement, Computer Vision, Robot Perception, Machine
+            Learning, etc.
+            <br /><br />
+            <b>Skillset Demonstrated: </b>
+            <br />
+            ROS, Python, C++, Ultralytics, PLC, Open3D, Numpy, Matplotlib,
+            Excel, Segment-Anything, Depth-Anything, YOLO, etc.
+            <br /><br />
+            <b>Video Demo: </b>
+            <br />
+            <video
+              src="..\..\assets\robotics_projects\Terrain_Segment_2.mp4"
+              muted
+              autoplay
+              loop
+              style="width: 50%; height: auto"
+            ></video>
+            <br />
+            Top left shows the original color image<br />
+            Top middle shows the segmentation of various terrains <br />
+            Top right shows the linear relationship between estimated depth and
+            captured depth <br />
+            Bottom left shows the captured depth visualized in 3D point cloud
+            <br />
+            Bottom right shows the estimated depth visualized in 3D point cloud
+            <br />
+          </p>
+
+          <button
+            class="w3-button w3-black"
+            onclick="window.open('https://drive.google.com/file/d/1cKyoGo_bejLJ1PZF-Ynzs4KT5Fk769DT/view?usp=drive_link','_blank')"
+          >
+            Interim Report
+          </button>
+          <br /><br />
+          <button
+            class="w3-button w3-black"
+            onclick="window.location.href ='../../robot_pf.html';"
+          >
+            Back to portfolio
+          </button>
+        </div>
+      </header>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Planar Terrain Spawner</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="..\..\assets\logo\KB_favicon.png"
+    />
+  </head>
+  <title>Planar Terrain Spawner</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Raleway"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Raleway", sans-serif;
+    }
+  </style>
+
+  <body class="w3-light-grey w3-content" style="max-width: 1600px">
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left: 10px">
+      <!-- Header -->
+      <header id="portfolio">
+        <div class="w3-container">
+          <h1>
+            <b>Planar Terrain Spawner</b>
+          </h1>
+          Jan 2023 - May 2023
+          <p>
+            <b>Project Description:</b>
+            <br />
+            This project was undertaken during my internship with the Institute
+            for Infocomm Research. Its aim is to develop a real-time planar
+            terrain spawner inside the PyBullet real-time simulation software.
+            This feature would be useful for conducting research into the
+            interaction of robot digital doubles with the digitally spawned
+            terrains.
+            <br /><br />
+            For this project, I conducted in-depth studies into various plane
+            segmentation algorithms, such as RANSAC, Hough Transform, etc. I
+            also implemented and experimented with various state-of-the-art
+            algorithms such as PEAC, MPS, etc., to evaluate the performance and
+            accuracy of each plane segmentation algorithm.
+            <br /><br />
+            With PEAC as my plane segmentation algorithm basis, I obtained the
+            plane equation from real-life sensor data. Then, I filtered out the
+            points that lie outside of the plane and performed a convex hull
+            calculation to obtain the edge polygon points. By projecting these
+            points onto the ground surface, I performed mesh generation,
+            successfully reconstructing the planar terrain inside the simulator.
+            <br /><br />
+            <b>Knowledge Demonstrated:</b>
+            <br />
+            Plane segmentation and fitting, Point Cloud Enhancement, Robot
+            Perception, Mesh Reconstruction, etc.
+            <br /><br />
+            <b>Skillset Demonstrated:</b>
+            <br />
+            ROS, Python, C++, PLC, Open3D, OpenGL, RANSAC, Hough Transform,
+            Convex Hull, Region Growing, RVIZ, PyBullet, Orbbec, Realsense, Mesh
+            etc.
+            <br /><br />
+            <b>Video Demo: </b>
+            <br />
+            <video
+              src="..\..\assets\robotics_projects\Planar Terrain Spawning inside PyBullet.mp4"
+              muted
+              autoplay
+              loop
+              style="width: 50%; height: auto"
+            ></video>
+            <br />
+            Video shows the RVIZ visualization and PyBullet spawner.
+            <br />
+          </p>
+          <br /><br />
+          <button
+            class="w3-button w3-black"
+            onclick="window.location.href ='../../robot_pf.html';"
+          >
+            Back to portfolio
+          </button>
+        </div>
+      </header>
+    </div>
+  </body>
+</html>
