@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Autonomous UAV Navigation</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="..\..\assets\logo\KB_favicon.png"
+    />
+  </head>
+  <title>Autonomous UAV Navigation</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Raleway"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Raleway", sans-serif;
+    }
+  </style>
+
+  <body class="w3-light-grey w3-content" style="max-width: 1600px">
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left: 10px">
+      <!-- Header -->
+      <header id="portfolio">
+        <div class="w3-container">
+          <h1>
+            <b>Autonomous TurtleBot Navigation</b>
+          </h1>
+          Jan 2024 - Present
+          <p>
+            <b>Project Description:</b>
+            <br />
+            Project for EE4308: Autonomous Robotic System. This project aims to
+            implement navigation software for the Drone to navigate towards
+            placed waypoints.
+            <br /><br />
+            In this project, few Drone sensors measurements are utilized,
+            including GPS, Magnetometer, Sonar and Barometer. An extended Kalman
+            Filter (EKF) are used to estimate the pose and speed of the flying
+            drone. The goal is to let the drone travel between different
+            waypoints while a turtlebot navigates an obstacle course below.
+            <br /><br />
+            <b>Knowledge Demonstrated:</b>
+            <br />
+            Extended Kalman Filter
+            <br /><br />
+            <b>Skillset Demonstrated:</b>
+            <br />
+            ROS, C++, Odometry, Occupancy Grid, Inflation, Inverse Sensor Model,
+            Line algorithms, Path Planners (A*STAR, Theta* etc.), Motion
+            Control, Simple Pursuit, Spline Trajectories, PID Motion Control,
+            Extended Kalman Filter, etc.
+            <br /><br />
+            <b>Video Demo: </b>
+            <br />
+            <video
+              src="..\..\assets\robotics_projects\Drone.mp4"
+              muted
+              autoplay
+              loop
+              style="width: 50%; height: auto"
+            ></video>
+            <br />
+            Videos shows the RVIZ visualization, where the drone follows the red
+            waypoints and the blue look ahead points.
+          </p>
+          <button
+            class="w3-button w3-black"
+            onclick="window.open('https://github.com/Kaeboon/Autonomous_Drone','_blank')"
+          >
+            Github
+          </button>
+          <br /><br />
+          <button
+            class="w3-button w3-black"
+            onclick="window.location.href ='../../robot_pf.html';"
+          >
+            Back to portfolio
+          </button>
+        </div>
+      </header>
+    </div>
+  </body>
+</html>
