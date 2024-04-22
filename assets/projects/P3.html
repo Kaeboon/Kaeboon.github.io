@@ -50,12 +50,17 @@
             reinforcement learning algorithms.
             <br /><br />
             For this project, I applied the Deep Deterministic Policy Gradient
-            Algorithm to train our policy. It consists of actor and critic
-            networks, and is suitable for our project where continuous values
-            are used. I coded the OpenAI simulation, Neural Network, and the
-            Reinforcement Learning agent from scratch. <br /><br />
-            For further implementation details, you may refer to my report
-            attached below.
+            Algorithm to train our policy. The reason for choosing DDPG is the
+            continuous state values we are dealing with in our environment. The
+            state space employed in this project includes robot position,
+            velocity, leg interactions with the ground, etc. I have employed a
+            simple reward structure here, which focuses solely on rewarding
+            forward velocity and penalizing lateral movements.
+
+            <br /><br />
+            For this project, I coded the OpenAI simulation, neural network, and
+            the reinforcement learning agent from scratch. For further
+            implementation details, you may refer to my report attached below.
             <br /><br />
             <b>Knowledge Demonstrated:</b>
             <br />
@@ -92,7 +97,7 @@
           <br /><br />
           <button
             class="w3-button w3-black"
-            oonclick="window.location.href ='../../robot_pf.html';"
+            onclick="window.location.href ='../../robot_pf.html';"
           >
             Back to portfolio
           </button>
